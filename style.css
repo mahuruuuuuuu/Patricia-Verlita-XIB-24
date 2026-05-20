@@ -1,29 +1,92 @@
 body {
-  background: #eef2f7;
+  background: #181732;
+  color: #e6e6eb;
+  font-family: 'Cinzel', serif;
+  margin:0;
+  min-height: 100vh;
+  position: relative;
 }
 
-.hero {
-  background: linear-gradient(90deg, #40c9ff 0%, #e81cff 100%);
-  color: white;
+.hero-section {
+  background: radial-gradient(ellipse at center, #353267 0%, #181732 100%), #181732;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.profile-card {
-  transition: box-shadow 0.2s;
+.fancy-title {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 1px;
+  font-weight:700;
+  color: #ffe066;
+  text-shadow: 0 0 12px #fff1a7, 0 0 50px #9e95df;
 }
 
-.profile-card.bg-primary {
-  background: #0d6efd !important;
-  color: white !important;
+.tarot-preview {
+  border-radius: 12px;
+  width: 110px;
+  box-shadow: 0 4px 16px rgba(185, 153, 255,0.23);
 }
-.profile-card.bg-success {
-  background: #198754 !important;
-  color: white !important;
+
+.footer {
+  background: #232026;
+  color: #e7e2e1;
+  border-top: 1px solid #414158;
+  font-size: 0.98rem;
 }
-.profile-card.bg-danger {
-  background: #dc3545 !important;
-  color: white !important;
+
+nav.navbar {
+  font-family: 'Cinzel', serif;
 }
-.profile-card.bg-info {
-  background: #0dcaf0 !important;
-  color: #212529 !important;
+
+/* Flip Card Tarot Reading */
+.tarot-flip-card {
+  width: 140px;
+  height: 210px;
+  perspective: 900px;
+  margin: 0 auto 1.5rem auto;
+}
+.tarot-flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.9s cubic-bezier(.47,1.64,.41,.8);
+  transform-style: preserve-3d;
+}
+.tarot-flip-front, .tarot-flip-back {
+  position: absolute;
+  width: 100%; height: 100%;
+  backface-visibility: hidden;
+  border-radius: 14px;
+  box-shadow: 0 6px 28px 0 rgba(50,35,80,0.23);
+  background: #fff;
+}
+.tarot-flip-front {
+  background: #d9d0ef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tarot-flip-back {
+  transform: rotateY(180deg);
+  background: #fbefda;
+  color: #181732;
+  text-align: center;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+}
+.flipped {
+  transform: rotateY(180deg);
+}
+
+@media (max-width: 600px){
+  .hero-section {
+    min-height: 40vh;
+    padding: 1.5rem;
+  }
 }
