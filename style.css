@@ -1,0 +1,29 @@
+body {
+  background: #eef2f7;
+}
+
+.hero {
+  background: linear-gradient(90deg, #40c9ff 0%, #e81cff 100%);
+  color: white;
+}
+
+.profile-card {
+  transition: box-shadow 0.2s;
+}
+
+.profile-card.bg-primary {
+  background: #0d6efd !important;
+  color: white !important;
+}
+.profile-card.bg-success {
+  background: #198754 !important;
+  color: white !important;
+}
+.profile-card.bg-danger {
+  background: #dc3545 !important;
+  color: white !important;
+}
+.profile-card.bg-info {
+  background: #0dcaf0 !important;
+  color: #212529 !important;
+}
