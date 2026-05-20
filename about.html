@@ -2,31 +2,71 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Web Mahuru - About</title>
+  <title>About - Tarot Wisdom Hub</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <canvas id="star-canvas"></canvas>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html">Mahuru</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav3">
+      <a class="navbar-brand fw-bold" href="index.html">Tarot Wisdom Hub</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navb3">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav3">
+      <div class="collapse navbar-collapse" id="navb3">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
-          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="reading.html" class="nav-link">Reading</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link active">About</a></li>
         </ul>
       </div>
     </div>
   </nav>
-  <main class="container mt-5 text-center">
-    <h2>Tentang Website Ini</h2>
-    <p>Website ini dibuat untuk memenuhi tugas pembuatan web statis menggunakan Bootstrap, HTML, dan sedikit JavaScript.</p>
-    <p>Semua bisa diakses di GitHub Pages. Template inspirasi dari <a href="https://replit.com">Replit</a>.</p>
+  <main class="container py-5">
+    <section class="mb-5">
+      <h2 class="fancy-title mb-3">Tentang Website Ini</h2>
+      <p>
+        Tarot Wisdom Hub dibuat untuk memudahkan siapa saja melakukan reading kartu tarot sehari-hari dengan cara yang modern serta mudah dipahami. Semua kartu yang digunakan adalah dari Rider-Waite Tarot dan seluruh fitur didesain agar mudah digunakan pemula sekalipun.
+      </p>
+    </section>
+    <section>
+      <h3 class="mb-3">Kartu Populer</h3>
+      <div class="row">
+        <div class="col-sm-4 mb-3">
+          <div class="card border-warning h-100">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/RWS_Tarot_00_Fool.jpg/200px-RWS_Tarot_00_Fool.jpg" class="card-img-top" alt="The Fool">
+            <div class="card-body">
+              <h5 class="card-title">The Fool</h5>
+              <p class="card-text">Awal baru, peluang, kepercayaan diri.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 mb-3">
+          <div class="card border-info h-100">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/RWS_Tarot_01_Magician.jpg/200px-RWS_Tarot_01_Magician.jpg" class="card-img-top" alt="The Magician">
+            <div class="card-body">
+              <h5 class="card-title">The Magician</h5>
+              <p class="card-text">Kreativitas, manifestasi, potensi baru.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 mb-3">
+          <div class="card border-danger h-100">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/RWS_Tarot_06_Lovers.jpg" class="card-img-top" alt="The Lovers">
+            <div class="card-body">
+              <h5 class="card-title">The Lovers</h5>
+              <p class="card-text">Pilihan hidup, hubungan, harmoni.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+  <footer class="footer text-center py-3 text-light bg-dark">
+    <small>&copy; 2026 Tarot Wisdom Hub.</small>
+  </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>
